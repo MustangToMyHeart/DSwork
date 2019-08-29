@@ -20,11 +20,6 @@
 		ad_subject_id=#{subjectId.adSubjectId}
 	</update>
 	
-	<select id="selectSubjectById" resultType="com.reachauto.vspportal.appstore.model.subject.SubjectDetails">
-		SELECT 
-		  subject_name,
-		  subject_desc,
-		  subject_image 
 		FROM
 		  ad_subject 
 		WHERE ad_subject_id = #{subjectId.adSubjectId} 
